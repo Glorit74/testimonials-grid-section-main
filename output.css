@@ -921,8 +921,8 @@ p {
   height: 2rem;
 }
 
-.h-28 {
-  height: 7rem;
+.h-32 {
+  height: 8rem;
 }
 
 .w-32 {
@@ -1941,6 +1941,10 @@ p {
   background-image: url('./images/bg-pattern-quotation.svg');
 }
 
+.bg-quotation {
+  background-image: url('./images/bg-pattern-quotation.svg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1959,10 +1963,6 @@ p {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .bg-fixed {
@@ -1992,10 +1992,6 @@ p {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-repeat {
@@ -2636,14 +2632,6 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .lg\:right-11 {
-    right: 2.75rem;
-  }
-
-  .lg\:right-\[11\] {
-    right: 11;
-  }
-
   .lg\:right-\[4\.5rem\] {
     right: 4.5rem;
   }

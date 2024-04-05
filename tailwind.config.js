@@ -13,10 +13,10 @@ module.exports = {
     fontFamily: {
       sans: ["Barlow Semi Condensed", "Inter", "sans-serif"],
     },
+	backgroundImage: {
+	  quotation: "url('./images/bg-pattern-quotation.svg')",
+	},
     extend: {
-      backgroundImage: {
-        quotation: "url('./images/bg-pattern-quotation.svg')",
-      },
     },
   },
   plugins: [],
