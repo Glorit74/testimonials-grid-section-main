@@ -12,6 +12,15 @@
     />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       .attribution {
@@ -25,15 +34,20 @@
   </head>
   <body>
     <main>
-      <article class="card">
-        <div>
-          <div>
+      <article class="card bg-violet lg:col-span-2 relative text-white">
+		<div class="absolute right-6 lg:right-[4.5rem] top-0 w-32 h-28 bg-[url('./images/bg-pattern-quotation.svg')] bg-cover bg-center bg-no-repeat z-1"></div>
+        <div class="flex items-center">
+          <div
+            class="rounded-full size-7 border-2 border-gray overflow-hidden mr-4"
+          >
             <img src="./images/image-daniel.jpg" alt="avatar Daniel Clifford" />
           </div>
-          <strong>Daniel Clifford</strong>
-          <p>Verified Graduate</p>
+          <div>
+            <h2>Daniel Clifford</h2>
+            <p>Verified Graduate</p>
+          </div>
         </div>
-        <p>
+        <p class="relative z-2">
           <strong>
             I received a job offer mid-course, and the subjects I learned were
             current, if not more so, in the company I joined. I honestly feel I
@@ -50,16 +64,18 @@
           a Software Engineer at a VR startup. ”
         </p>
       </article>
-      <article class="card">
-        <div>
-          <div>
+      <article class="card bg-grayishBlue lg:col-start-3">
+        <div class="flex items-center">
+          <div class="rounded-full size-8 overflow-hidden mr-3">
             <img
               src="./images/image-jonathan.jpg"
               alt="avatar Jonathan Walters"
             />
           </div>
-          <strong>Jonathan Walters</strong>
-          <p>Verified Graduate</p>
+          <div>
+            <h2>Jonathan Walters</h2>
+            <p>Verified Graduate</p>
+          </div>
         </div>
         <p>
           <strong>The team was very supportive and kept me motivated</strong>
@@ -70,16 +86,18 @@
           investments I’ve made in myself. ”
         </p>
       </article>
-      <article class="card">
-        <div>
-          <div>
+      <article class="card bg-White text-grayishBlue lg:row-start-2">
+        <div class="flex items-center">
+          <div class="rounded-full size-8 overflow-hidden mr-3">
             <img
               src="./images/image-jeanette.jpg"
               alt="avatar Jeanette Harmon"
             />
           </div>
-          <strong>Jeanette Harmon</strong>
-          <p>Verified Graduate</p>
+          <div>
+            <h2>Jeanette Harmon</h2>
+            <p>Verified Graduate</p>
+          </div>
         </div>
         <p><strong>An overall wonderful and rewarding experience</strong></p>
         <p>
@@ -88,13 +106,17 @@
         </p>
       </article>
 
-      <article class="card">
-        <div>
-          <div>
+      <article
+        class="card bg-blackishBlue lg:row-start-2 lg:col-start-2 lg:col-span-2"
+      >
+        <div class="flex items-center">
+          <div class="rounded-full size-8 overflow-hidden mr-3">
             <img src="./images/image-patrick.jpg" alt="avatar Patrick Abrams" />
           </div>
-          <strong>Patrick Abrams</strong>
-          <p>Verified Graduate</p>
+          <div>
+            <h2>Patrick Abrams</h2>
+            <p>Verified Graduate</p>
+          </div>
         </div>
         <p>
           <strong>
@@ -112,13 +134,17 @@
           people. ”
         </p>
       </article>
-      <article class="card">
-        <div>
-          <div>
+      <article
+        class="card bg-White text-blackishBlue lg:row-start-1 lg:row-span-2 lg:col-start-4"
+      >
+        <div class="flex items-center">
+          <div class="rounded-full size-8 overflow-hidden mr-3">
             <img src="./images/image-kira.jpg" alt="avatar Kira Whittle" />
           </div>
-          <strong>Kira Whittle</strong>
-          <p>Verified Graduate</p>
+          <div>
+            <h2>Kira Whittle</h2>
+            <p>Verified Graduate</p>
+          </div>
         </div>
 
         <p>
@@ -144,7 +170,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <. Glorit74.
+      >. Coded by Glorit74.
     </div>
   </body>
 </html>

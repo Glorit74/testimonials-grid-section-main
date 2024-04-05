@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Barlow Semi Condensed, Inter, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -448,15 +448,17 @@ video {
 
 body {
   display: flex;
+  min-height: 100dvh;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 main {
   display: flex;
-  width: 400px;
+  width: 24rem;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 main > :not([hidden]) ~ :not([hidden]) {
@@ -467,15 +469,34 @@ main > :not([hidden]) ~ :not([hidden]) {
 
 main {
   --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 81% / var(--tw-bg-opacity));
-  padding: 2.5rem;
+  background-color: hsl(210 46% 95% / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  font-family: Barlow Semi Condensed, Inter, sans-serif;
   font-size: 13px;
   --tw-text-opacity: 1;
   color: hsl(0 0% 81% / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 72rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
+  main > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+}
+
 h2 {
-  font-size: 1.1rem;
+  margin-bottom: -0.25rem;
+  font-size: .9rem;
   font-weight: 600;
 }
 
@@ -483,7 +504,7 @@ p strong {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.75rem;
 }
@@ -636,7 +657,12 @@ p {
 
 .card {
   border-radius: 0.5rem;
-  padding: 1.25rem;
+  padding: 1.75rem;
+}
+
+.absolute {
+  height: 2rem;
+  width: 33.333333%;
 }
 
 .sr-only {
@@ -712,6 +738,14 @@ p {
 
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .isolate {
@@ -877,11 +911,6 @@ p {
   display: none;
 }
 
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .size-7 {
   width: 1.75rem;
   height: 1.75rem;
@@ -890,6 +919,14 @@ p {
 .size-8 {
   width: 2rem;
   height: 2rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1900,6 +1937,10 @@ p {
   background-color: hsl(263 55% 52% / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/images\/bg-pattern-quotation\.svg\'\)\] {
+  background-image: url('./images/bg-pattern-quotation.svg');
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1918,6 +1959,10 @@ p {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-fixed {
@@ -1947,6 +1992,10 @@ p {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-repeat {
@@ -2145,6 +2194,11 @@ p {
 .text-blackishBlue {
   --tw-text-opacity: 1;
   color: hsl(219 29% 14% / var(--tw-text-opacity));
+}
+
+.text-grayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(217 19% 35% / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2578,6 +2632,48 @@ p {
 @media (min-width: 640px) {
   .sm\:underline {
     text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:right-11 {
+    right: 2.75rem;
+  }
+
+  .lg\:right-\[11\] {
+    right: 11;
+  }
+
+  .lg\:right-\[4\.5rem\] {
+    right: 4.5rem;
+  }
+
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .lg\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .lg\:col-start-4 {
+    grid-column-start: 4;
+  }
+
+  .lg\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .lg\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .lg\:row-start-2 {
+    grid-row-start: 2;
   }
 }
 

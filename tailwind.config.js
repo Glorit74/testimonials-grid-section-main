@@ -10,10 +10,14 @@ module.exports = {
       gray: "hsl(0, 0%, 81%)",
       blue: "hsl(210, 46%, 95%)",
     },
-	fontFamily : {
-		serif: ['Barlow', serif]
-	},
-    extend: {},
+    fontFamily: {
+      sans: ["Barlow Semi Condensed", "Inter", "sans-serif"],
+    },
+    extend: {
+      backgroundImage: {
+        quotation: "url('./images/bg-pattern-quotation.svg')",
+      },
+    },
   },
   plugins: [],
 };
