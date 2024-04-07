@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/Screenshot_testimonials.png)
+![Desktop](images/Screenshot_testimonials.png)
 
 ### Links
 
@@ -46,7 +46,9 @@ Users should be able to:
 How to use custom values for background-image in tailwind.config.js
 
 ```html
-<div class="absolute right-6 lg:right-[4.5rem] top-0 w-32 h-32 bg-quotation bg-no-repeat z-1"></div>
+<div
+  class="absolute right-6 lg:right-[4.5rem] top-0 w-32 h-32 bg-quotation bg-no-repeat z-1"
+></div>
 ```
 
 ```js
@@ -64,4 +66,4 @@ module.exports = {
 
 ### Useful link to the background image
 
-- [Tailwind background image](https://tailwindcss.com/docs/background-image) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Tailwind background image](https://tailwindcss.com/docs/background-image)
